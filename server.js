@@ -1,5 +1,5 @@
 // Import JSON
-var flugwetterCH = require('./api/flugwetterCH.json');
+var flugwetterCH = require('./public/json/flugwetterCH.json');
 
 // server.js
 // load the things we need
@@ -34,6 +34,16 @@ app.get('/', function(req, res) {
 app.get('/webcams', function(req, res) {
     res.render('pages/webcams');
 });
+
+// Reload Content
+app.get('/reload', function(req, res) {
+    var run = require('./public/js/scrape-img.js');
+    res.send(run.downloadIMG());
+
+    run = require('./public/js/scrape-flugwetterCH.js');
+    res.send(run.downloadFlugwetterCH());
+});
+
 
 app.listen(8080);
 console.log('8080 is the magic port');
