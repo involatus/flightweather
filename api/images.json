@@ -1,0 +1,62 @@
+[
+    {
+      "name": "synopsis",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=cformat.png"
+    },
+    {
+      "name": "Wpreview24h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_icon_ftkblcc_na_lv_000000_p_024_1200.png"
+    },
+    {
+      "name": "Wpreview48h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_icon_ftkblcc_na_lv_000000_p_048_1200.png"
+    },
+    {
+      "name": "Wpreview36h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_icon_ftkblcc_na_lv_000000_p_036_0000.png"
+    },
+    {
+      "name": "Wpreview60h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_icon_ftkblcc_na_lv_000000_p_060_0000.png"
+    },
+    {
+      "name": "Wpreview84h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_icon_ftkblcc_na_lv_000000_p_084_0000.png"
+    },
+    {
+      "name": "Wpreview108h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_icon_ftkblcc_na_lv_000000_p_108_0000.png"
+    },
+    {
+      "name": "gafor-ch",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=vlfn48.png"
+    },
+    {
+      "name": "wind12h",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wtc_alp_lv_999999_p_012_0000.png"
+    },
+    {
+      "name": "foehn",
+      "url": "http://www.meteocentrale.ch/uploads/pics/uwz-ch_foehn_de.png"
+    },
+    {
+      "name": "bise",
+      "url": "http://www.meteocentrale.ch/uploads/pics/uwz-ch_bise_de.png"
+    },
+    {
+      "name": "LLSWC06-10",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=qgdb48_loww_0400.png"
+    },
+    {
+      "name": "LLSWC10-14",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=qgdb48_loww_0800.png"
+    },
+    {
+      "name": "LLSWC14-18",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=qgdb48_loww_1200.png"
+    },
+    {
+      "name": "LLSWC18-22",
+      "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=qgdb48_loww_1600.png"
+    }
+  ]

@@ -1,0 +1,20 @@
+{
+  "name": "flightweather",
+  "description": "dashboard for flight weather",
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/severinkilchhofer/flightweather",
+    "type": "git"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {}
+}
