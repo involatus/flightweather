@@ -55,7 +55,8 @@ fetch('https://msmangasser:alvaster@www.flugwetter.de/fw/berichte/uebersicht/sch
             voralpen: '',
             engadin: '',
             gefahren: '',
-            aussichten: ''
+            aussichten: '',
+            validity: ''
         };
 
         // extract Flugwetteruebersicht - Schweiz
@@ -66,6 +67,7 @@ fetch('https://msmangasser:alvaster@www.flugwetter.de/fw/berichte/uebersicht/sch
         flugwetterCH.engadin = extractbetween(body, 'Alpensuedseite und Engadin:', 'GEFAHREN');
         flugwetterCH.gefahren = extractbetween(body, 'GEFAHREN', 'AUSSICHTEN BIS MITTERNACHT');
         flugwetterCH.aussichten = extractbetween(body, 'AUSSICHTEN BIS MITTERNACHT', 'WIND (GRAD/KT)');
+        flugwetterCH.validity = extractbetween(body, 'MeteoSchweiz, am ', 'WETTERLAGE');
         writejson(flugwetterCH, 'flugwetterCH');
     });
 

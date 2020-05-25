@@ -1,8 +1,19 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col col-sm">
-      <h1>Flugwetter vom DATUM</h1>
-      <button type="button" class="btn btn-dark">Refresh</button>
+      <h1>Flugwetter vom <%= flugwetterCH.validity %></h1>
+      <button type="button" class="btn btn-dark" onclick="onClick()">Refresh</button>
+
+      <script>
+
+           function onClick() {
+            require('../../api/scrape.js');
+            alert("Demo Alert")
+           }
+
+     </script>
+
+
     </div>
   </div>
   <div class="row">

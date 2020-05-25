@@ -1,3 +1,4 @@
+// Import JSON
 var flugwetterCH = require('./api/flugwetterCH.json');
 
 // server.js
@@ -25,7 +26,7 @@ app.get('/', function(req, res) {
     res.render('pages/index', {
         drinks: drinks,
         tagline: tagline,
-        flugwetterCH: flugwetterCH
+        flugwetterCH: flugwetterCH,
     });
 });
 
