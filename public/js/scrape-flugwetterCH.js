@@ -52,7 +52,7 @@ function downloadFlugwetterCH() {
         flugwetterCH.engadin = extractbetween(body, 'Alpensuedseite und Engadin:', 'GEFAHREN');
         flugwetterCH.gefahren = extractbetween(body, 'GEFAHREN', 'AUSSICHTEN BIS MITTERNACHT');
         flugwetterCH.aussichten = extractbetween(body, 'AUSSICHTEN BIS MITTERNACHT', 'WIND (GRAD/KT)');
-        flugwetterCH.validity = extractbetween(body, 'MeteoSchweiz, am ', 'WETTERLAGE');
+        flugwetterCH.validity = extractbetween(body, 'von MeteoSchweiz am ', 'WETTERLAGE');
         writejson(flugwetterCH, 'flugwetterCH');
     });
 };

@@ -35,13 +35,18 @@ app.get('/webcams', function(req, res) {
     res.render('pages/webcams');
 });
 
+// Forecast page 
+app.get('/forecast', function(req, res) {
+    res.render('pages/forecast');
+});
+
 // Reload Content
 app.get('/reload', function(req, res) {
     var run = require('./public/js/scrape-img.js');
     res.send(run.downloadIMG());
 
-    run = require('./public/js/scrape-flugwetterCH.js');
-    res.send(run.downloadFlugwetterCH());
+    var run2 = require('./public/js/scrape-flugwetterCH.js');
+    res.send(run2.downloadFlugwetterCH());
 });
 
 
