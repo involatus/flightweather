@@ -47,6 +47,9 @@ app.get('/reload', function(req, res) {
 
     var run2 = require('./public/js/scrape-flugwetterCH.js');
     res.send(run2.downloadFlugwetterCH());
+
+    var run3 = require('./public/js/scrape-meteoblue.js');
+    res.send(run3.downloadmeteoblue());
 });
 
 

@@ -1,14 +1,11 @@
 <div class="container-fluid">
 <!-- Title + Reload Button -->
   <div class="row">
-    <div class="col col-sm">
-      <h1>Flugwetter vom <%= flugwetterCH.validity %></h1>
+    <div class="col col-11">
+      <h1>Flugwetter<%= flugwetterCH.validity %></h1>
+     </div> 
+     <div class="col col-1">
       <a class="btn btn-dark" href="/reload" target="_blank">Refresh</a>
-      <script>
-        function onClick() {
-          alert("Demo Alert")
-        }
-      </script>
     </div>
   </div>
  <!-- Flugwetter Uebersicht CH --> 
@@ -32,7 +29,7 @@
     </div>
   </div>
 <!-- LLSWC Tabs -->
-  <div class="row justify-content-center">
+  <div class="row justify-content-center bg-light">
     <div class="col col-8">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -71,12 +68,9 @@
       <img src="img/windbarbs12h.png" alt="Windbarbs" />
     </div>
   </div>
-  <div class="row">
-    <div class="col col-sm">
+  <div class="row justify-content-center">
+    <div class="col col-8">
       <iframe width="800" height="500" src="https://embed.windy.com/embed2.html?lat=46.740&amp;lon=10.547&amp;zoom=5&amp;level=surface&amp;overlay=rain&amp;menu=&amp;message=&amp;marker=&amp;calendar=&amp;pressure=true&amp;type=map&amp;location=coordinates&amp;detail=&amp;detailLat=46.740&amp;detailLon=10.547&amp;metricWind=default&amp;metricTemp=default&amp;radarRange=-1" frameborder="0"></iframe>
-    </div>
-    <div class="col col-sm">
-      xy
     </div>
   </div>
   <div class="row">

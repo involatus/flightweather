@@ -2,36 +2,25 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%- include ('../partials/head') %>
 </head>
+
 <body>
 
-<header>
-    <%- include ('../partials/header') %>
-</header>
+    <header>
+        <%- include ('../partials/header') %>
+    </header>
 
-<main class="container-fluid">
-<div class="row">
-    <div class="col-sm-8">    
-        <div class="jumbotron">
-            <h1>Forecast</h1>
-            <%- include ('../partials/forecast-content.ejs') %>
-        </div>
-    </div>
+    <main class="container-fluid">
+        <%- include ('../partials/forecast-content.ejs') %>
+    </main>
 
-    <div class="col-sm-4">        
-        <div class="well">
-            <h3>Look I'm A Sidebar!</h3>
-        </div>
-    </div>
-
-</div>
-</main>
-
-<footer>
-    <%- include ('../partials/footer') %>
-</footer>
+    <footer>
+        <%- include ('../partials/footer') %>
+    </footer>
 
 </body>
+
 </html>
