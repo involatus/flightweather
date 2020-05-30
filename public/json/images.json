@@ -32,12 +32,36 @@
     "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getimg.php?src=vlfn48.png"
   },
   {
-    "name": "windtemp12h",
+    "name": "windtemp09h",
     "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wtc_alp_lv_999999_p_021_1200.png"
   },
   {
-    "name": "windbarbs12h",
+    "name": "windtemp12h",
+    "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wtc_alp_lv_999999_p_024_1200.png"
+  },
+  {
+    "name": "windtemp15h",
+    "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wtc_alp_lv_999999_p_027_1200.png"
+  },
+  {
+    "name": "windtemp18h",
+    "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wtc_alp_lv_999999_p_030_1200.png"
+  },
+  {
+    "name": "windbarbs09h",
     "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wbc_alp_lv_999999_p_021_1200.png"
+  },
+  {
+    "name": "windbarbs12h",
+    "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wbc_alp_lv_999999_p_024_1200.png"
+  },
+  {
+    "name": "windbarbs15h",
+    "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wbc_alp_lv_999999_p_027_1200.png"
+  },
+  {
+    "name": "windbarbs18h",
+    "url": "https://msmangasser:alvaster@www.flugwetter.de/fw/scripts/getchart.php?src=nb_wbc_alp_lv_999999_p_030_1200.png"
   },
   {
     "name": "foehn",

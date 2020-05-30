@@ -1,14 +1,14 @@
 <div class="container-fluid">
-<!-- Title + Reload Button -->
+  <!-- Title + Reload Button -->
   <div class="row">
     <div class="col col-11">
       <h1>Flugwetter<%= flugwetterCH.validity %></h1>
-     </div> 
-     <div class="col col-1">
+    </div>
+    <div class="col col-1">
       <a class="btn btn-dark" href="/reload" target="_blank">Refresh</a>
     </div>
   </div>
- <!-- Flugwetter Uebersicht CH --> 
+  <!-- Flugwetter Uebersicht CH -->
   <div class="row">
     <div class="col col-sm">
       <img src="img/synopsis.png" alt="Bodenkarte">
@@ -28,18 +28,18 @@
       <p><%= flugwetterCH.aussichten %></p>
     </div>
   </div>
-<!-- LLSWC Tabs -->
+  <!-- LLSWC Tabs -->
   <div class="row justify-content-center bg-light">
     <div class="col col-8">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-06-10" role="tab"
+          <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-06-10" role="tab"
             aria-controls="nav-06-10" aria-selected="true">LLSWC 06-10 UTC</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-10-14" role="tab"
+          <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-10-14" role="tab"
             aria-controls="nav-10-14" aria-selected="false">LLSWC 10-14 UTC</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-14-18" role="tab"
+          <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-14-18" role="tab"
             aria-controls="nav-14-18" aria-selected="false">LLSWC 14-18 UTC</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-18-22" role="tab"
+          <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-18-22" role="tab"
             aria-controls="nav-18-22" aria-selected="false">LLSWC 18-22 UTC</a>
         </div>
       </nav>
@@ -59,18 +59,72 @@
       </div>
     </div>
   </div>
-<!-- Wind -->
+  <!-- Wind -->
   <div class="row">
     <div class="col col-sm">
-      <img src="img/windtemp12h.png" alt="Wind-/Temperatur" />
+      <!-- Wind Tabs -->
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-wind09" role="tab"
+            aria-controls="nav-1" aria-selected="true">09 UTC</a>
+          <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-wind12" role="tab"
+            aria-controls="nav-2" aria-selected="false">12 UTC</a>
+          <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-wind15" role="tab"
+            aria-controls="nav-3" aria-selected="false">15 UTC</a>
+          <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-wind18" role="tab"
+            aria-controls="nav-4" aria-selected="false">18 UTC</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-wind09" role="tabpanel" aria-labelledby="nav-home-tab">
+          <img src="img/windtemp09h.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="tab-pane fade" id="nav-wind12" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <img src="img/windtemp12h.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="tab-pane fade" id="nav-wind15" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <img src="img/windtemp15h.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="tab-pane fade" id="nav-wind18" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <img src="img/windtemp18h.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
     </div>
     <div class="col col-sm">
-      <img src="img/windbarbs12h.png" alt="Windbarbs" />
+      <!-- Wind Barb Tabs -->
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-windbarb09" role="tab"
+            aria-controls="nav-1" aria-selected="true">09 UTC</a>
+          <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-windbarb12" role="tab"
+            aria-controls="nav-2" aria-selected="false">12 UTC</a>
+          <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-windbarb15" role="tab"
+            aria-controls="nav-3" aria-selected="false">15 UTC</a>
+          <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-windbarb18" role="tab"
+            aria-controls="nav-4" aria-selected="false">18 UTC</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-windbarb09" role="tabpanel" aria-labelledby="nav-home-tab">
+          <img src="img/windbarbs09h.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="tab-pane fade" id="nav-windbarb12" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <img src="img/windbarbs12h.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="tab-pane fade" id="nav-windbarb15" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <img src="img/windbarbs15h.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="tab-pane fade" id="nav-windbarb18" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <img src="img/windbarbs18h.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col col-8">
-      <iframe width="800" height="500" src="https://embed.windy.com/embed2.html?lat=46.740&amp;lon=10.547&amp;zoom=5&amp;level=surface&amp;overlay=rain&amp;menu=&amp;message=&amp;marker=&amp;calendar=&amp;pressure=true&amp;type=map&amp;location=coordinates&amp;detail=&amp;detailLat=46.740&amp;detailLon=10.547&amp;metricWind=default&amp;metricTemp=default&amp;radarRange=-1" frameborder="0"></iframe>
+      <iframe width="800" height="500"
+        src="https://embed.windy.com/embed2.html?lat=46.740&amp;lon=10.547&amp;zoom=5&amp;level=surface&amp;overlay=rain&amp;menu=&amp;message=&amp;marker=&amp;calendar=&amp;pressure=true&amp;type=map&amp;location=coordinates&amp;detail=&amp;detailLat=46.740&amp;detailLon=10.547&amp;metricWind=default&amp;metricTemp=default&amp;radarRange=-1"
+        frameborder="0"></iframe>
     </div>
   </div>
   <div class="row">
@@ -81,7 +135,7 @@
       <img src="img/bise.png" alt="Bisendiagram" />
     </div>
   </div>
-<!-- GAFOR -->
+  <!-- GAFOR -->
   <div class="row justify-content-center">
     <div class="col col-8">
       <img src="img/gafor-ch.png" alt="GAFOR Schweiz" />

@@ -24,21 +24,28 @@ app.get('/', function(req, res) {
     var tagline = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
 
     res.render('pages/index', {
+        page: 'home',
         drinks: drinks,
         tagline: tagline,
         flugwetterCH: flugwetterCH,
     });
 });
 
-// about page 
-app.get('/webcams', function(req, res) {
-    res.render('pages/webcams');
-});
-
 // Forecast page 
 app.get('/forecast', function(req, res) {
-    res.render('pages/forecast');
+    res.render('pages/forecast', {
+        page: 'forecast',
+    });
 });
+
+// Webcams page 
+app.get('/webcams', function(req, res) {
+    res.render('pages/webcams', {
+        page: 'webcams',
+    });
+});
+
+
 
 // Reload Content
 app.get('/reload', function(req, res) {
