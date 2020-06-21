@@ -21,7 +21,8 @@ function downloadFlugwetterCH() {
             engadin: '',
             gefahren: '',
             aussichten: '',
-            validity: ''
+            validity: '',
+            forecast: '',
         };
 
         // extract Flugwetteruebersicht - Schweiz
@@ -33,6 +34,7 @@ function downloadFlugwetterCH() {
         flugwetterCH.gefahren = functions.extractbetween(body, 'GEFAHREN', 'AUSSICHTEN BIS MITTERNACHT');
         flugwetterCH.aussichten = functions.extractbetween(body, 'AUSSICHTEN BIS MITTERNACHT', 'WIND (GRAD/KT)');
         flugwetterCH.validity = functions.extractbetween(body, 'von MeteoSchweiz', 'WETTERLAGE');
+        flugwetterCH.forecast = functions.extractbetween(body, 'WETTERENTWICKLUNG', 'Naechste Aktualisierung:');
         functions.writejson(flugwetterCH, 'flugwetterCH');
     });
 };

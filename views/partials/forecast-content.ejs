@@ -4,9 +4,82 @@
   </div>
 </div>
 <!-- Meteoblue 14 days -->
-<div class="row justify-content-center">
-  <div class="col col-7">
-    <img src="./img/meteoblue14d.png" alt="" />
+<div class="row">
+  <div class="col col-sm">
+    <h3>Lupfig</h3>
+    <img src="./img/meteoblue14d_birrfeld.png" alt="" />
+  </div>
+  <div class="col col-sm">
+    <div class="accordion" id="accordionExample">
+      <!-- Start Card 1 -->
+      <div class="card">
+        <div class="card-header" id="heading1">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              Locarno
+            </button>
+          </h3>
+        </div>
+        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="./img/meteoblue14d_Locarno.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End Card 1 -->
+      <!-- Start Card 2 -->
+      <div class="card">
+        <div class="card-header" id="heading2">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapse2" aria-expanded="true" aria-controls="collapseTwo">
+              Sion
+            </button>
+          </h3>
+        </div>
+        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="./img/meteoblue14d_sion.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End Card 2 -->
+      <!-- Start Card 3 -->
+      <div class="card">
+        <div class="card-header" id="heading3">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+              Genf
+            </button>
+          </h3>
+        </div>
+        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="./img/meteoblue14d_genf.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End Card 3 -->
+      <!-- Start Card 4 -->
+      <div class="card">
+        <div class="card-header" id="heading4">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+              Samaden
+            </button>
+          </h3>
+        </div>
+        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="./img/meteoblue14d_samaden.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End Card 4 -->
+    </div>
   </div>
 </div>
 <!-- 3 Tages Prognose Alpenraum -->
@@ -16,7 +89,7 @@
   </div>
   <div class="col col-sm">
     <h2>3-Tages Prognose Alpenraum</h2>
-    <p>Text to go</p>
+    <p>Wetterentwicklung <%= flugwetterCH.forecast %></p>
   </div>
 </div>
 <div class="row">

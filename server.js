@@ -35,13 +35,54 @@ app.get('/', function(req, res) {
 app.get('/forecast', function(req, res) {
     res.render('pages/forecast', {
         page: 'forecast',
+
+        flugwetterCH: flugwetterCH,
     });
 });
 
 // Webcams page 
 app.get('/webcams', function(req, res) {
+
+    let roundshots = [
+        {name: 'LSZF', id: '4d4ace145f81c381b57a67cee137338c', url: 'https://birrfeld.roundshot.com/' },
+        {name: 'Jungfrau-Ostgrat', id: '862', url: 'https://jungfrau.roundshot.com/top-of-europe-jungfrau-ostgrat/' },
+        {name: 'LSZS', id: '473', url: 'https://engadin-airport.roundshot.com/' }
+        
+    ];
+/*
+    let roundshots = {
+            birrfeld: {
+                LSZF: {
+                    name: 'LSZF',
+                    id: '4d4ace145f81c381b57a67cee137338c',
+                    url: 'https://birrfeld.roundshot.com/'
+                },
+                Uetliberg: {
+                    name: 'Uetliberg',
+                    id: '78',
+                    url: 'https://uetliberg.roundshot.com/'
+                }
+            },
+            bern: {
+                Jungfrau: {
+                    name: 'Jungfrau-Ostgrat',
+                    id: '862',
+                    url: 'https://jungfrau.roundshot.com/top-of-europe-jungfrau-ostgrat/'
+                }
+            },            
+            engadin: {
+                LSZS: {
+                    name: 'LSZS',
+                    id: '473',
+                    url: 'https://engadin-airport.roundshot.com/'
+                }
+            }
+        };
+*/
+
     res.render('pages/webcams', {
         page: 'webcams',
+        roundshots: roundshots,
     });
 });
 
