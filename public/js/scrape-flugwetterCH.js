@@ -39,8 +39,33 @@ function downloadFlugwetterCH() {
     });
 };
 
-    module.exports = {
-        downloadFlugwetterCH: downloadFlugwetterCH
-    };
+// Alpenraumprognose
+function downloadAlpenraum() {
+    fetch('https://msmangasser:alvaster@www.flugwetter.de/fw/berichte/3dprog/alps.htm')
+    .then(res => res.text())
+    .then(body => {
+        // Load HTML in cheerio
+        const $ = cheerio.load(body);
+        const htmlbody = $('*');
 
-    downloadFlugwetterCH();
+        let alpenraum = {
+            day1: '',
+            day2: '',
+            day3: '',
+        };
+
+        // extract Flugwetteruebersicht - Schweiz
+        alpenraum.day1 = functions.extractbetween(body, 'Entwicklung der Wetterlage und markante Windsysteme:', 'Die naechste planmaessige Aktualisierun');
+        alpenraum.day2 = functions.extractbetween(body, ':', ':');
+        alpenraum.day3 = functions.extractbetween(body, ':', ':');
+        functions.writejson(alpenraum, 'alpenraum');
+    });
+};
+
+module.exports = {
+    downloadFlugwetterCH: downloadFlugwetterCH,
+    downloadAlpenraum: downloadAlpenraum,
+};
+
+downloadFlugwetterCH();
+downloadAlpenraum();

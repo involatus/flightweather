@@ -1,5 +1,6 @@
 // Import JSON
 var flugwetterCH = require('./public/json/flugwetterCH.json');
+var alpenraum = require('./public/json/alpenraum.json');
 
 // server.js
 // load the things we need
@@ -37,52 +38,53 @@ app.get('/forecast', function(req, res) {
         page: 'forecast',
 
         flugwetterCH: flugwetterCH,
+        alpenraum: alpenraum,
     });
 });
 
 // Webcams page 
 app.get('/webcams', function(req, res) {
 
-    let roundshots = [
+    let roundshotsBirrfeld = [
         {name: 'LSZF', id: '4d4ace145f81c381b57a67cee137338c', url: 'https://birrfeld.roundshot.com/' },
-        {name: 'Jungfrau-Ostgrat', id: '862', url: 'https://jungfrau.roundshot.com/top-of-europe-jungfrau-ostgrat/' },
-        {name: 'LSZS', id: '473', url: 'https://engadin-airport.roundshot.com/' }
-        
+        {name: 'Uetliberg', id: '78', url: 'https://uetliberg.roundshot.com/' },
+        {name: 'Hausen am Albis', id: '20', url: 'https://albiswings.roundshot.com/' },
+        {name: 'Rapperswil', id: '1126', url: 'https://knieskinderzoo.roundshot.com/' },
     ];
-/*
-    let roundshots = {
-            birrfeld: {
-                LSZF: {
-                    name: 'LSZF',
-                    id: '4d4ace145f81c381b57a67cee137338c',
-                    url: 'https://birrfeld.roundshot.com/'
-                },
-                Uetliberg: {
-                    name: 'Uetliberg',
-                    id: '78',
-                    url: 'https://uetliberg.roundshot.com/'
-                }
-            },
-            bern: {
-                Jungfrau: {
-                    name: 'Jungfrau-Ostgrat',
-                    id: '862',
-                    url: 'https://jungfrau.roundshot.com/top-of-europe-jungfrau-ostgrat/'
-                }
-            },            
-            engadin: {
-                LSZS: {
-                    name: 'LSZS',
-                    id: '473',
-                    url: 'https://engadin-airport.roundshot.com/'
-                }
-            }
-        };
-*/
+    
+    let roundshotsZS = [
+        {name: 'Pilatus', id: '155', url: 'https://pilatus.roundshot.com/' },
+        {name: 'Rigi', id: '901', url: 'https://rigi.roundshot.com/' },
+        {name: 'Jungfrau-Ostgrat', id: '862', url: 'https://jungfrau.roundshot.com/top-of-europe-jungfrau-ostgrat/' },
+        {name: 'Brienzer Rothorn', id: '620', url: ' https://soerenberg.roundshot.com/rothorn/' },
+    ];
+
+    let roundshotsWallis = [
+        {name: 'LSGS - Sion', id: '518', url: 'https://sionairport.roundshot.com/' },
+    ];
+
+    let roundshotsGraubuenden = [
+        {name: 'Landquart', id: '784', url: 'https://valzeina.roundshot.com/' },
+    ];
+    
+
+    let roundshotsEngadin = [
+        {name: 'LSZS - Samaden', id: '473', url: 'https://engadin-airport.roundshot.com/' },
+    ];
+
+    let roundshotsOstschweiz = [
+        {name: 'Säntis', id: '156', url: 'https://saentis.roundshot.com/' },
+        {name: 'Chöserrugg', id: '75', url: 'https://chaeserrugg.roundshot.com/' },
+    ];
 
     res.render('pages/webcams', {
         page: 'webcams',
-        roundshots: roundshots,
+        roundshotsBirrfeld: roundshotsBirrfeld,
+        roundshotsZS: roundshotsZS,
+        roundshotsWallis: roundshotsWallis,
+        roundshotsGraubuenden: roundshotsGraubuenden,
+        roundshotsEngadin: roundshotsEngadin,
+        roundshotsOstschweiz: roundshotsOstschweiz,
     });
 });
 

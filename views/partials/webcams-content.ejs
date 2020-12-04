@@ -1,4 +1,5 @@
 <div class="accordion" id="accordionExample">
+  <!-- Birrfeld -->
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
@@ -8,51 +9,93 @@
         </button>
       </h2>
     </div>
-
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-        <%- include ('../partials/roundshot.ejs') %>
+        <%- include ('../partials/roundshot.ejs', {data: roundshotsBirrfeld}) %>
       </div>
     </div>
   </div>
+  <!-- Zentralschweiz -->
   <div class="card">
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
           data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Test
+          Zentralschweiz
         </button>
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-        haven't heard of them accusamus labore sustainable VHS.
+        <%- include ('../partials/roundshot.ejs', {data: roundshotsZS}) %>
       </div>
     </div>
   </div>
+  <!-- Wallis -->
   <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
           data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+          Wallis
         </button>
       </h2>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-        haven't heard of them accusamus labore sustainable VHS.
+        <%- include ('../partials/roundshot.ejs', {data: roundshotsWallis}) %>
       </div>
     </div>
   </div>
+  <!-- Graubuenden -->
+  <div class="card">
+    <div class="card-header" id="heading4">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+          data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          Graubünden
+        </button>
+      </h2>
+    </div>
+    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+      <div class="card-body">
+        <%- include ('../partials/roundshot.ejs', {data: roundshotsGraubuenden}) %>
+      </div>
+    </div>
+  </div>
+  <!-- Engadin -->
+  <div class="card">
+    <div class="card-header" id="heading5">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+          data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+          Engadin
+        </button>
+      </h2>
+    </div>
+    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+      <div class="card-body">
+        <%- include ('../partials/roundshot.ejs', {data: roundshotsEngadin}) %>
+      </div>
+    </div>
+  </div>
+  <!-- Ostschweiz -->
+  <div class="card">
+    <div class="card-header" id="heading6">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+          data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+          Ostschweiz
+        </button>
+      </h2>
+    </div>
+    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+      <div class="card-body">
+        <%- include ('../partials/roundshot.ejs', {data: roundshotsOstschweiz}) %>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>

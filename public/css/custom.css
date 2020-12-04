@@ -1,3 +1,30 @@
 img { max-width:100%;}
 .row {padding: 7.5px 0 !important; }
 .card-header {padding: 0 !important;}
+
+
+/*
+body{
+    background: #007bff;
+    }
+  @media screen and (min-width: 576px){
+    body{
+    background: #007bff;
+    }
+   }
+   @media screen and (min-width: 768px) {
+   body{
+   background: #dc3545;
+    }
+   } 
+  @media screen and (min-width: 992px) {
+    body{
+   background: #28a745;
+   }
+  }
+  @media screen and (min-width: 1200px) {
+    body{
+   background: #6f42c1;
+   }
+  }
+*/

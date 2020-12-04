@@ -1,6 +1,6 @@
-<% roundshots.forEach(function(roundshot) { %>
+<% data.forEach(function(roundshot) { %>
 <!--      Roundshot Block     -->
-<h3><%= roundshot.name %></h3>
+<h4><%= roundshot.name %></h4>
 <div class="wpb_column vc_column_container vc_col-sm-12">
     <div class="vc_column-inner">
         <div class="wpb_wrapper">
@@ -10,7 +10,7 @@
                         type="text/javascript"></script>
                     <script type="text/javascript">
                         var contentWidth = jQuery(".wpb_wrapper").width();
-                        roundshot.animate({ picture: "https://backend.roundshot.com/cams/<%= roundshot.id %>/thumbnail", link: "<%= roundshot.url %>", angle: 360, width: contentWidth, height: 260, bounce: false, open_in_new_tab: true, speed: 10 }); 
+                        roundshot.animate({ picture: "https://backend.roundshot.com/cams/<%= roundshot.id %>/thumbnail", link: "<%= roundshot.url %>", angle: 360, width: contentWidth, height: 260, bounce: false, open_in_new_tab: true, speed: 20 }); 
                     </script>
                 </div>
             </div>
